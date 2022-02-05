@@ -1,0 +1,12 @@
+<h1>Elige tu casa favorita de la saga Harry Poter</h1>
+<br><br>
+
+<button class="btn" (click)="getcharacters('Gryffindor')">Gryffindor</button>
+<button class="btn" (click)="getcharacters('slytherin')">Slytherin</button>
+<button class="btn" (click)="getcharacters('RavenClaw')">RavenClaw</button>
+
+<ul>
+    <li *ngFor="let character of house">
+        {{character.name}} - {{character.gender}}
+    </li>
+</ul>
